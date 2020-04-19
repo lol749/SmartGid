@@ -48,8 +48,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    background-color: white;
+    background-color: whitesmoke;
     font-family: 'Open Sans';
+    /*background: url('../images/parkk.jpeg') center / cover no-repeat;*/
 }
 
 a {
@@ -57,9 +58,7 @@ a {
     color: white;
 }
 
-html, body {
-    height: 100%;
-}
+
 
 ol, ul {
 	list-style: none;
@@ -172,6 +171,7 @@ a:hover {
 img {
     border: 0; /* 1 */
     -ms-interpolation-mode: bicubic; /* 2 */
+    transition: 0.2s linear;
 }
 
 /**
@@ -388,120 +388,145 @@ textarea {
     padding: 0.2em 0;
 }
 .main-center-content {
-    max-width: 1250px;
+    max-width: 1140px;
+    overflow: hidden;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* ----------------- HERE START MY CODE!!! ----------------- */
+
+.logo {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+}
+.logo a {
+    display: inline-block;
+    color: #222;
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 20px;
+}
+.header {
+    overflow: hidden;
+   /* background-color: blanchedalmond;*/
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.search-box {
     overflow: hidden;
     margin: 0 auto;
 }
-
- 
-/* -------------- HERE START MY CODE!!! ---------------- */
-
-.wrapper {
-    min-height: 100vh;
-}
-.header {
-    text-align: center;
-    overflow: hidden;
-}
-.header li {
-    display: inline;
-}
-.header li a {
+.search {
     display: inline-block;
-    padding: 30px 10px;
-    color: #474b30;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #666;
+    border-radius: 5px;
+    width: 70%;
 }
-.header li a:active {
-    color: white;
-}
-.header li a:after {
-    color: white;
+.search:focus {
+    border: 1px solid rgb(26, 154, 240);
 }
 .content {
-    min-height: 100vh;
-    background-color: #666;
     overflow: hidden;
-    background: url('../images/dendro.jpg') center / cover no-repeat;
+   /* background-color: whitesmoke;*/
+}
+.navigation {
+    overflow: hidden;
+    width: 100%;
+}
+.navigation a {
+    color: #666!important;
+}
+.navigation article {
+    width: 31%;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+    margin-bottom: 10px; 
+    box-shadow: 1px 1px 4px rgba(0,0,0, 0.10);
+    background-color: white ;
+}
+.nav-img {
+    overflow: hidden;
+    width: 100%;
+    height: 190px;
+}
+.nav-img img:hover {
+    transform: scale(1.1);
+}
+.navigation article a {
+    display: block;
+    color: #666;
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 1em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+.news-content {
+    overflow: hidden;
+    width: 100%;
+}
+.news-content h2 {
+    padding: 25px 10px;
+    font-size: 2em;
+    font-family: 'Open Sans';
+    color: #222222;
+    border-bottom: 1px solid #ddd;
+    font-weight: 600;
+}
+.post {
+    margin-top: 40px;
+    background-color: white;
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.10);
     position: relative;
 }
-.smart {
-    color: whitesmoke;
-    padding-top: 7em;
-    font-weight: 300;
-}
-.cont {
+.img-left {
+   float: left;
+   /* position: absolute;
+    top: 0;
+    left: 0; */
+    width: 250px;
     overflow: hidden;
-    color: white!important;
 }
-.quick {
-    padding: 1em 0;
-    font-weight: 300;
-}
-.cont h1 {
-    font-size: 3em;
-    font-weight: 500!important;
-    line-height: 0.5;
-}
-.cont h2 {
-    font-weight: 300;
-    font-size: 2em;
-    line-height: 1.3;
-}
-.cont a {
-    border: 1px solid #99e919;
-    margin-top: 10px; 
-    display: inline-block;
-    padding: 15px 40px;
-    background-color: #99e919;
+.img-left img {
     transition: 0.2s linear;
 }
-.cont a:hover {
-    border-color: white;
-    background-color: rgba(255, 255, 255, 0);
+.img-left img:hover {
+    transform: scale(1.05);
 }
-.footer {
-    overflow: hidden;
+.text-post {
     position: absolute;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    text-align: center;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    padding: 30px 30px;
+    margin-left: 250px;
 }
-.footer ul {
-    width: 100%;
-}
-.footer li {
-    display: inline;
-}
-.footer li a {
+.post a {
+    color: #333;
+   /* margin: 10px 30px;*/
     display: inline-block;
-    padding: 10px 5px;
+    font-size: 1.5em;
 }
-.footer li img {
-    width: 22px;
+.text-post p {
+    margin-top: 10px; 
 }
-@media screen and (max-width: 1331px) {
-    .main-center-content {
-        max-width: 1000px;
-    }
-}
-@media screen and (max-width: 1131px) {
-    .main-center-content {
-        max-width: 900px;
-    }
-}
-@media screen and (max-width: 1000px) {
-    .main-center-content {
-        max-width: 800px;
-    }
-}
-@media screen and (max-width: 858px) {
-    .cont {
-        text-align: center;
-    }
-}
-@media screen and (max-width: 321px) {
-    .smart {
-    padding-top: 3.5em;
-    }
+.map {
+    margin-top: 50px;
+    width: 100%;
+    height: 600px;
+    border:0;
+    
 }

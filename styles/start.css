@@ -50,7 +50,9 @@ body {
 	line-height: 1;
     background-color: whitesmoke;
     font-family: 'Open Sans';
-    /*background: url('../images/parkk.jpeg') center / cover no-repeat;*/
+    background: url('../images/parkk.jpeg') no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
 }
 
 a {

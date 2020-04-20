@@ -48,8 +48,9 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
-    background-color: white;
+    /*animation: back 25s infinite;*/
     font-family: 'Open Sans';
+  /*  background: url('../images/dendro.jpg') center / cover no-repeat;*/
 }
 
 a {
@@ -397,7 +398,14 @@ textarea {
 /* -------------- HERE START MY CODE!!! ---------------- */
 
 .wrapper {
+    overflow: hidden;
     min-height: 100vh;
+    position: relative;
+}
+.bground {
+    min-height: 100vh;
+    background: url('../images/dendro2.jpg') center / cover no-repeat;
+    animation: back 35s infinite;
 }
 .header {
     text-align: center;
@@ -419,10 +427,18 @@ textarea {
 }
 .content {
     min-height: 100vh;
-    background-color: #666;
+    width: 100%;
+   /* background-color: #666;*/
     overflow: hidden;
-    background: url('../images/dendro.jpg') center / cover no-repeat;
+    position: absolute;
+    top: 0;
+    
+}
+.conntent {
     position: relative;
+    overflow: hidden;
+    min-height: 100vh;
+    width: 100%;
 }
 .smart {
     color: whitesmoke;
@@ -504,4 +520,10 @@ textarea {
     .smart {
     padding-top: 3.5em;
     }
+}
+@keyframes back {
+    5%{transform: scale(1);}
+    50%{transform: scale(1.2);} 
+    
+    95%{transform: scale(1);}
 }

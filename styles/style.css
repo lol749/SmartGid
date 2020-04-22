@@ -404,8 +404,8 @@ textarea {
 }
 .bground {
     min-height: 100vh;
-    background: url('../images/dendro2.jpg') center / cover no-repeat;
-    animation: back 35s infinite;
+    background: url('../images/dendrom.jpg') center / cover no-repeat;
+    animation: back 40s infinite;
 }
 .header {
     text-align: center;

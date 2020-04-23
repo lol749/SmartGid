@@ -505,6 +505,15 @@ section.top-bar-par {
     width: 100px;
     /*display: block;*/
 }
+.mp-columns article p {
+    margin-top: 5px;
+}
+.mp-columns article a {
+    transition: 0.2s linear;
+}
+.mp-columns article a:hover {
+    transform: scale(1.1);
+}
 .content {
     width: 100%;
     overflow: hidden;
